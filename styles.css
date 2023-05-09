@@ -3,8 +3,7 @@ body {
 }
 
 * {
-	border: 1px dashed red;
-	min-height: 10px;
+	font-family: "Comic Neue", cursive;
 }
 
 .postcard {
@@ -12,10 +11,14 @@ body {
 	width: 400px;
 	height: 300px;
 	margin: auto;
+	padding: 4px;
 }
 
 .postcard-header {
 	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 .postcard-header img {
@@ -33,24 +36,36 @@ body {
 }
 
 .body-left p:first-child {
-  margin-top: 0;
+	margin-top: 0;
+}
+.body-left {
+	width: 200px;
+}
+
+.body-right {
+	width: 180px;
+}
+
+input {
+	color: gray;
+	border: none;
+	border-bottom: solid gray 1px;
+	font-size: 20px;
+	width: 180px;
+	outline: none;
+	margin-bottom: 4px;
 }
 
 .body-left,
 .body-right {
-    padding: 4px;
-}
-
-input {
-  border: none;
-  border-bottom: gray;
+	padding: 4px;
 }
 
 .postcard-footer {
-  text-align: center;
+	text-align: center;
 }
 
 button {
-  background-color: gray;
-  padding: 2px;
+	background-color: gray;
+	padding: 2px;
 }
